@@ -90,13 +90,229 @@ p {
   flex-grow: 1;
 }
 
-.container {
+.recipe-page {
+  max-width: 736px;
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.recipe-page__img {
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.recipe-page__heading {
+  align-self: start;
+  color: #312e2c;
+  font-size: 40px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.recipe-page__text {
+  color: #5f564d;
+  font-weight: 400;
+}
+
+.recipe-page__preparation {
+  max-width: 656px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 28px;
+  background-color: #fff7fb;
+  border-radius: 12px;
+}
+
+.recipe-page__preparation--title {
+  color: #7a284e;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.recipe-page__preparation--item {
+  position: relative;
+  list-style: none;
+}
+
+.recipe-page__preparation--item::before {
+  content: "";
+  background: url("/circle.svg	") 0 0 no-repeat;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 10px;
+  left: -17px;
+}
+
+.recipe-page__preparation--item-paragraph {
+  color: #5f564d;
+  font-weight: 400;
+}
+
+.recipe-page__preparation--item-span {
+  font-weight: 700;
+  color: #5f564d;
+}
+
+.recipe-page__ingredients {
+  max-width: 656px;
+  width: 100%;
+  border-bottom: 1px #e3ddd7 solid;
+  padding-bottom: 32px;
+}
+
+.recipe-page__ingredients--title,
+.recipe-page__instructions--title {
+  color: #854632;
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.recipe-page__ingredients-list {
+  margin-top: 24px;
+  list-style: none;
+}
+
+.recipe-page__ingredients--item {
+  position: relative;
+}
+
+.recipe-page__ingredients--item p {
+  color: #5f564d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Outfit", "Arial" sans-serif;
+  line-height: 24px;
+}
+
+.recipe-page__ingredients--item::before {
+  content: "";
+  background: url("/circle.svg	") 0 0 no-repeat;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 10px;
+  left: -34px;
+}
+
+.recipe-page__instructions {
+  max-width: 656px;
+  width: 100%;
+  border-bottom: 1px #e3ddd7 solid;
+  padding-bottom: 32px;
+  margin-top: 32px;
+}
+
+.recipe-page-instructions__list {
+  margin: 0;
+  margin-top: 24px;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 8px;
+}
+.recipe-page-instructions__item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.recipe-page-instructions__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.recipe-page-instructions__item span {
+  color: #854632;
+  font-size: 16px;
+
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.recipe-page__nutrition {
+  max-width: 656px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.recipe-page__nutrition--title {
+  color: #854632;
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.recipe-page__nutrition--text {
+  color: #5f564d;
+  font-size: 16px;
+  font-family: "Outfit", "Arial" sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.recipe-page__nutrition-list {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.recipe-page__nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-bottom: 1px #e3ddd7 solid;
+  padding-bottom: 32px;
+}
+
+.recipe-page__nutrition-item p,
+.recipe-page__nutrition-item span {
+  max-width: 288px;
+  width: 100%;
+}
+
+.recipe-page__nutrition-item p {
+  color: #5f564d;
+  font-size: 16px;
+  font-family: "Outfit", "Arial" sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.recipe-page__nutrition-item span {
+  color: #854632;
+  font-size: 16px;
+  font-family: "Outfit", "Arial" sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.recipe-page__nutrition-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),

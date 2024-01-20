@@ -271,11 +271,8 @@ p {
 }
 
 .recipe-page__nutrition-list {
-  /* display: flex; */
-  /* flex-direction: column; */
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -346,7 +343,7 @@ p {
 
   .recipe-page__heading {
     max-width: 311px;
-	 width: 100%;
+    width: 100%;
     color: #312e2c;
     font-size: 36px;
     font-family: "Young Serif", serif;
@@ -356,7 +353,7 @@ p {
 
   .recipe-page__text {
     max-width: 311px;
-	 width: 100%;
+    width: 100%;
     color: #5f564d;
     font-size: 16px;
     font-family: "Outfit", "Arial" sans-serif;

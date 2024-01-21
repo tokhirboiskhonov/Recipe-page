@@ -1,3 +1,13 @@
+:root {
+  --body-bg-color: #f3e5d7;
+  --bg-white: #fff;
+  --body-text-color: #303b59;
+  --outfit-font-family: "Outfit", "Arial" sans-serif;
+  --young-font-family: "Young Serif", serif;
+  --heading-color: #312e2c;
+  --paragraph-color: #5f564d;
+  --title-color: #854632;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
